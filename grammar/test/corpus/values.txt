@@ -1,0 +1,104 @@
+==================
+string
+==================
+
+"hello"
+
+---
+
+(document
+  (string
+    (string_content)))
+
+==================
+empty string
+==================
+
+""
+
+---
+
+(document
+  (string))
+
+==================
+string with escapes
+==================
+
+"line\nbreak é \\ \" \/"
+
+---
+
+(document
+  (string
+    (string_content
+      (escape_sequence)
+      (escape_sequence)
+      (escape_sequence)
+      (escape_sequence))))
+
+==================
+integers
+==================
+
+42
+
+---
+
+(document
+  (number))
+
+==================
+negative zero
+==================
+
+-0
+
+---
+
+(document
+  (number))
+
+==================
+fraction and exponent
+==================
+
+-12.5e-3
+
+---
+
+(document
+  (number))
+
+==================
+true
+==================
+
+true
+
+---
+
+(document
+  (true))
+
+==================
+false
+==================
+
+false
+
+---
+
+(document
+  (false))
+
+==================
+null
+==================
+
+null
+
+---
+
+(document
+  (null))

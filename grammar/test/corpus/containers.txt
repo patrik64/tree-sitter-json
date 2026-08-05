@@ -1,0 +1,82 @@
+==================
+empty object
+==================
+
+{}
+
+---
+
+(document
+  (object))
+
+==================
+empty array
+==================
+
+[]
+
+---
+
+(document
+  (array))
+
+==================
+object with pairs
+==================
+
+{ "a": 1, "b": [true, null] }
+
+---
+
+(document
+  (object
+    (pair
+      key: (string
+        (string_content))
+      value: (number))
+    (pair
+      key: (string
+        (string_content))
+      value: (array
+        (true)
+        (null)))))
+
+==================
+nested structures
+==================
+
+{
+  "users": [
+    { "name": "ada", "admin": true },
+    { "name": "grace", "admin": false }
+  ]
+}
+
+---
+
+(document
+  (object
+    (pair
+      key: (string
+        (string_content))
+      value: (array
+        (object
+          (pair
+            key: (string
+              (string_content))
+            value: (string
+              (string_content)))
+          (pair
+            key: (string
+              (string_content))
+            value: (true)))
+        (object
+          (pair
+            key: (string
+              (string_content))
+            value: (string
+              (string_content)))
+          (pair
+            key: (string
+              (string_content))
+            value: (false)))))))
