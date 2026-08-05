@@ -21,8 +21,11 @@ The app is fully client-side and builds to a static site (`adapter-static`,
 
 - Node + pnpm
 - [tree-sitter CLI](https://tree-sitter.github.io/tree-sitter/) (`cargo install tree-sitter-cli`)
-- an [emsdk](https://github.com/emscripten-core/emsdk) checkout (only needed to
-  rebuild the wasm after grammar changes) ... run `` ./emsdk install latest && ./emsdk activate latest``
+- an [emsdk](https://github.com/emscripten-core/emsdk) checkout and run
+  ```sh
+  ./emsdk install latest
+  ./emsdk activate latest
+  ```
 
 ## Setup & develop
 
