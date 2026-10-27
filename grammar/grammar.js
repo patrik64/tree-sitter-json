@@ -13,10 +13,6 @@ module.exports = grammar({
 	// json.org "ws": skipped between any two tokens.
 	extras: (_) => [/[ \t\n\r]/],
 
-	// _value is hidden in the tree, but declared as a supertype so
-	// node-types.json still groups the seven concrete kinds under it.
-	supertypes: ($) => [$._value],
-
 	rules: {
 		// A JSON text is exactly one value.
 		document: ($) => $._value,
