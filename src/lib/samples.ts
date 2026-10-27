@@ -1,11 +1,10 @@
 export const VALID_SAMPLE = `{
-  "meetup": "tree-sitter from scratch",
-  "attendees": 42,
-  "topics": ["grammars", "wasm", "sveltekit"],
+  "meetup": "incremental parsing with tree-sitter",
+  "attendees": 72,
+  "topics": ["grammars", "parsing", "c", "rust", "javascript"],
   "speaker": {
     "name": "patrik",
-    "confirmed": true,
-    "rating": 4.9e0
+    "confirmed": true
   },
   "recording": null,
   "notes": "escape\\u00e9 \\"quotes\\" and\\nnewlines"
